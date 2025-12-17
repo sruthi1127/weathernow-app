@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href ="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    
+    <nav class = "navbar">
+
+        <div class = "title"> <h1>WeatherNow</h1> </div>
+        <div class="menu-toggle">☰</div>
+
+        <ul class = "links">
+            <li> <a href = "#home">Home</a>  </li>
+            <li> <a href = "#search">Search</a>  </li>
+            <li> <a href = "#weather">Weather</a> </li>
+            <li> <a href = "#about">About</a> </li>
+            <li> <a href = "#footer">Footer</a> </li>
+
+       
+        </ul>
+
+    </nav>
+
+
+
+    <main class = "container">
+
+   <section id="home">
+    <h2>Welcome</h2>
+    <p>
+        This is a simple weather application that lets you check the current
+        weather conditions of any city.
+    </p>
+    <p>
+        Use the search section to enter a city name and view temperature,
+        weather condition, humidity, and wind speed.
+    </p>
+</section>
+
+
+   
+    <section id = "search">
+
+        <h2>Search Weather</h2>
+        <div class="search-bar">
+            <input id = "city-input" type="text" placeholder="Enter city">
+            <button type="button">Search</button>
+            <p class ="error-msg">  </p>
+        </div>
+
+             </section>
+   
+
+
+    
+    <section id="weather">
+        <h2>Weather Details</h2>
+    <div class="weather-card" id = "weather-container">
+        <p class="temp"></p>
+        <p class="desc"></p>
+        <p class="extra"></p>
+    </div>
+    </section>
+
+   
+    <section id="about">
+    <h2>About This App</h2>
+
+    <div class="about-card">
+        <div class="about-icon">🌤</div>
+        <p>
+            This weather application allows users to search for real-time
+            weather information of any city using live API data.
+            It displays temperature, weather conditions, humidity,
+            and wind speed in a clean and simple interface.
+        </p>
+    </div>
+</section>
+
+   
+  <section id="footer">
+    <div class="footer-content">
+        <p>© 2025 Weather App</p>
+
+        <div class="footer-links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
